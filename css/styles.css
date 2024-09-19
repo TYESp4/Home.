@@ -1,0 +1,111 @@
+/* Small phones (portrait) */
+@media (min-width: 319px) and (max-width: 480px) {
+    #top-container {
+        height: 300px;
+        width: 100%;
+    }
+    #top-container h1 {
+        margin-left: 20%;
+        font-size: 24px;
+    }
+}
+
+/* Medium phones (landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+    #top-container {
+        height: 350px;
+        width: 100%;
+    }
+    #top-container h1 {
+        margin-left: 15%;
+        font-size: 28px;
+    }
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #top-container {
+        height: 400px;
+        width: 100%;
+    }
+    #top-container h1 {
+        margin-left: 15%;
+        font-size: 32px;
+    }
+}
+
+/* Small laptops */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    #top-container {
+        height: 450px;
+        width: 100%;
+    }
+    #top-container h1 {
+        margin-left: 10%;
+        font-size: 36px;
+    }
+}
+
+/* Desktops and large screens */
+@media (min-width: 1367px) {
+    #top-container {
+        height: 500px;
+        width: 100%;
+    }
+    #top-container h1 {
+        margin-left: 10%;
+        font-size: 40px;
+    }
+}
+
+/* Universal styles for all screen sizes */
+#top-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the start horizontally */
+    align-items: center;         /* Centers items vertically */
+    background-color: #6A9C89;
+    position: relative;
+    overflow: hidden;            /* Ensures background doesn't overflow */
+}
+
+#main-background {
+    position: absolute;
+    opacity: 0.8; /* Ensure only the background image is transparent */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Set a lower z-index for the background */
+}
+
+#top-container h1 {
+    color: black;     /* Text color for better contrast */
+    z-index: 2;       /* Set a higher z-index for the h1 to bring it to the front */
+    position: relative; /* Ensure it obeys the z-index stacking */
+}
+
+.navbar-brand{
+    font-weight: bolder;
+}
+
+/* Custom styles for testimonial-card */
+.testimonial-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .testimonial-card p {
+    font-style: italic;
+    font-size: 1.125rem;
+  }
+  
+  .testimonial-card footer {
+    font-size: 0.875rem;
+    text-align: right;
+    margin-top: 1rem;
+    color: #6c757d;
+  }
+  

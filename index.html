@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGH</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    /* Custom styles */
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .contact-button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+    }
+
+    .contact-button.instagram {
+      background-color: #E1306C; /* Instagram color */
+    }
+
+    .contact-button.email {
+      background-color: #007BFF; /* Bootstrap primary color */
+    }
+
+    .contact-button.whatsapp {
+      background-color: #25D366; /* WhatsApp color */
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Geek</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-container">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials-container">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Top Container -->
+  <div id="top-container">
+    <img id="main-background" src="Images/main-background.png" alt="main-background">
+    <div>
+      <h1>Welcome to <br> <span class="Title-text">TestGeekHub</span></h1>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about-container" class="container my-5">
+    <div class="row">
+      <div class="col-md-6 d-flex flex-column justify-content-center">
+        <h2>About Us</h2>
+        <p>Welcome to TestGeekHub! We are a community of tech enthusiasts passionate about the latest trends in technology, programming, and gadgets. Our goal is to provide valuable insights and knowledge to help you stay ahead in the ever-evolving tech world.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="Images/about-us.png" alt="About Us" class="img-fluid rounded">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials-container" class="container my-5">
+    <h2 class="text-center mb-4">What Our Users Say</h2>
+    <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div class="testimonial-card p-4">
+              <p>"TestGeekHub has been an incredible resource for keeping up with the latest tech trends. Highly recommend!"</p>
+              <footer class="blockquote-footer">John Doe</footer>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="testimonial-card p-4">
+              <p>"A fantastic community of tech enthusiasts. I've learned so much from the articles and discussions!"</p>
+              <footer class="blockquote-footer">Jane Smith</footer>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="testimonial-card p-4">
+              <p>"The insights provided by TestGeekHub have been invaluable for my personal and professional growth."</p>
+              <footer class="blockquote-footer">Alice Johnson</footer>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="testimonial-card p-4">
+              <p>"Great content and a vibrant community. It's the go-to place for all things tech."</p>
+              <footer class="blockquote-footer">Bob Brown</footer>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="testimonial-card p-4">
+              <p>"TestGeekHub has become an essential part of my tech routine. The content is always up-to-date and relevant."</p>
+              <footer class="blockquote-footer">Emily Davis</footer>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="testimonial-card p-4">
+              <p>"If you're passionate about tech, this is the place to be. The community is amazing and the content is top-notch."</p>
+              <footer class="blockquote-footer">Michael Wilson</footer>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact-us" class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="contact-buttons">
+      <a href="https://instagram.com" class="contact-button instagram" target="_blank">
+        <i class="fa-brands fa-instagram fa-spin-pulse" style="color: white;"></i>
+      </a>
+      <a href="mailto:angelgaurdian998@gmail.com" class="contact-button email">
+        <i class="fas fa-envelope fa-spin-pulse"></i>
+      </a>
+      <a href="https://wa.me/+15139054903" class="contact-button whatsapp" target="_blank">
+        <i class="fa-brands fa-whatsapp fa-spin-pulse"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
